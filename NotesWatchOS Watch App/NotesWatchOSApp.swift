@@ -6,7 +6,7 @@ import SwiftUI
 struct NotesWatchOS_Watch_AppApp: App {
     var body: some Scene {
         WindowGroup {
-            NavigationStack {
+            NavigationView {
                 ContentView()
             }
         }

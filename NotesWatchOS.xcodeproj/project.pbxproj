@@ -12,6 +12,10 @@
 		DF0D9983285B98A20066752F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF0D9982285B98A20066752F /* ContentView.swift */; };
 		DF0D9985285B98A30066752F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DF0D9984285B98A30066752F /* Assets.xcassets */; };
 		DF0D9988285B98A30066752F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DF0D9987285B98A30066752F /* Preview Assets.xcassets */; };
+		DF0D9994285B9B9E0066752F /* Note.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF0D9993285B9B9E0066752F /* Note.swift */; };
+		DF0D9998285B9D110066752F /* ViewModel+ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF0D9997285B9D110066752F /* ViewModel+ContentView.swift */; };
+		DF0D999B285B9DB10066752F /* FileManager+.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF0D999A285B9DB10066752F /* FileManager+.swift */; };
+		DF0D999D285BA3980066752F /* DetailNoteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF0D999C285BA3980066752F /* DetailNoteView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +49,10 @@
 		DF0D9982285B98A20066752F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		DF0D9984285B98A30066752F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DF0D9987285B98A30066752F /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		DF0D9993285B9B9E0066752F /* Note.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Note.swift; sourceTree = "<group>"; };
+		DF0D9997285B9D110066752F /* ViewModel+ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewModel+ContentView.swift"; sourceTree = "<group>"; };
+		DF0D999A285B9DB10066752F /* FileManager+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FileManager+.swift"; sourceTree = "<group>"; };
+		DF0D999C285BA3980066752F /* DetailNoteView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailNoteView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,10 +86,13 @@
 		DF0D997F285B98A20066752F /* NotesWatchOS Watch App */ = {
 			isa = PBXGroup;
 			children = (
-				DF0D9980285B98A20066752F /* NotesWatchOSApp.swift */,
-				DF0D9982285B98A20066752F /* ContentView.swift */,
-				DF0D9984285B98A30066752F /* Assets.xcassets */,
 				DF0D9986285B98A30066752F /* Preview Content */,
+				DF0D9999285B9D9C0066752F /* Extensions */,
+				DF0D9996285B9CF60066752F /* ViewModels */,
+				DF0D9995285B9BA50066752F /* Views */,
+				DF0D9992285B9B930066752F /* Models */,
+				DF0D9980285B98A20066752F /* NotesWatchOSApp.swift */,
+				DF0D9984285B98A30066752F /* Assets.xcassets */,
 			);
 			path = "NotesWatchOS Watch App";
 			sourceTree = "<group>";
@@ -92,6 +103,39 @@
 				DF0D9987285B98A30066752F /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		DF0D9992285B9B930066752F /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				DF0D9993285B9B9E0066752F /* Note.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		DF0D9995285B9BA50066752F /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				DF0D9982285B98A20066752F /* ContentView.swift */,
+				DF0D999C285BA3980066752F /* DetailNoteView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		DF0D9996285B9CF60066752F /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				DF0D9997285B9D110066752F /* ViewModel+ContentView.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		DF0D9999285B9D9C0066752F /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				DF0D999A285B9DB10066752F /* FileManager+.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -193,7 +237,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				DF0D9983285B98A20066752F /* ContentView.swift in Sources */,
+				DF0D999D285BA3980066752F /* DetailNoteView.swift in Sources */,
 				DF0D9981285B98A20066752F /* NotesWatchOSApp.swift in Sources */,
+				DF0D9994285B9B9E0066752F /* Note.swift in Sources */,
+				DF0D999B285B9DB10066752F /* FileManager+.swift in Sources */,
+				DF0D9998285B9D110066752F /* ViewModel+ContentView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -258,11 +306,13 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				WATCHOS_DEPLOYMENT_TARGET = 8.5;
 			};
 			name = Debug;
 		};
@@ -310,10 +360,12 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				WATCHOS_DEPLOYMENT_TARGET = 8.5;
 			};
 			name = Release;
 		};
@@ -343,7 +395,7 @@
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 4;
-				WATCHOS_DEPLOYMENT_TARGET = 9.0;
+				WATCHOS_DEPLOYMENT_TARGET = 8.5;
 			};
 			name = Debug;
 		};
@@ -374,7 +426,7 @@
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 4;
 				VALIDATE_PRODUCT = YES;
-				WATCHOS_DEPLOYMENT_TARGET = 9.0;
+				WATCHOS_DEPLOYMENT_TARGET = 8.5;
 			};
 			name = Release;
 		};
@@ -386,6 +438,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 7Z2WHPKU8W;
 				INFOPLIST_KEY_CFBundleDisplayName = NotesWatchOS;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.levochka.NotesWatchOS;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -402,6 +455,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 7Z2WHPKU8W;
 				INFOPLIST_KEY_CFBundleDisplayName = NotesWatchOS;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.levochka.NotesWatchOS;
 				PRODUCT_NAME = "$(TARGET_NAME)";
