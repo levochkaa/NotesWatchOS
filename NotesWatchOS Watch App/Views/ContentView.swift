@@ -41,24 +41,6 @@ struct ContentView: View {
                 .padding(.bottom, 5)
             }
         }
-        //        ScrollView {
-        //            VStack {
-        //                HStack(alignment: .center, spacing: 6) {
-        //                    TextField("Add Note", text: $text)
-        //                    Button {
-        //                        guard !text.isEmpty else { return }
-        //                        withAnimation {
-        //                            viewModel.addNote(text: text)
-        //                            text = ""
-        //                        }
-        //                    } label: {
-        //                        Image(systemName: "plus.circle")
-        //                            .font(.system(size: 30))
-        //                    }
-        //                    .buttonStyle(.plain)
-        //                }
-        //            }
-        //        }
     }
 }
 

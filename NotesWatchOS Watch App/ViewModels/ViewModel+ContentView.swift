@@ -27,7 +27,6 @@ extension ContentView {
         }
 
         public func deleteNote(atOffsets offsets: IndexSet) {
-//            guard let index = notes.firstIndex(of: note) else { return }
             notes.remove(atOffsets: offsets)
             saveNotes()
         }
